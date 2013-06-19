@@ -1,0 +1,46 @@
+{
+  "name": "component-amd",
+  "version": "0.0.0",
+  "description": "Component builder plugin that transforms AMD to CommonJS.",
+  "keywords": [
+    "component",
+    "builder",
+    "requirejs",
+    "amd"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jaredhanson/component-amd.git"
+  },
+  "bugs": {
+    "url": "http://github.com/jaredhanson/component-amd/issues"
+  },
+  "author": {
+    "name": "Jared Hanson",
+    "email": "jaredhanson@gmail.com",
+    "url": "http://www.jaredhanson.net/"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
+  "main": "index.js",
+  "dependencies": {
+    "batch": "0.4.x",
+    "esprima": "1.x.x",
+    "estraverse": "1.x.x",
+    "escodegen": "0.0.x"
+  },
+  "devDependencies": {
+    "mocha": "1.x.x",
+    "chai": "1.x.x"
+  },
+  "scripts": {
+    "test": "NODE_PATH=.. node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  }
+}
